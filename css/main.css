@@ -1,0 +1,87 @@
+@media(max-width: 767px) {
+	.mobile-texting-widget {
+	height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+	z-index: 999999;
+	margin: 0 10px 10px 0;
+	}
+	.mobile-texting-widget svg {
+		background: #EC7F00;
+		z-index: 99999;
+		width: 57px;
+		height: 57px;
+		position: absolute;
+		bottom: 15%;
+		right: 15%;
+		padding: 8.5px;
+		border-radius: 10px;
+	}
+	.mobile-texting-widget svg g {
+		fill: #fff;
+	}
+}
+.desktop-texting-widget {
+	height: 75px;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+	z-index: 999999;
+	margin: 0 10px 10px 0;
+}
+.desktop-texting-widget svg {
+    background: #5E4878;
+    z-index: 99999;
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    padding: 8.5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.52);
+}
+.desktop-texting-widget svg g {
+    fill: #fff;
+}
+.desktop-message {
+    position: absolute;
+    bottom: 70px;
+    width: 250px;
+    z-index: 999999;
+    background: #AB47BC;
+    color: #fff;
+    right: 15%;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+}
+.mobile-texting-widget {display: none;}
+@media(max-width: 767px) {
+	.mobile-texting-widget {display: block;}
+	.desktop-texting-widget {display: none;}
+}
+#desktop-trigger {cursor: pointer;}
+.desktop-message a {color: #fff;}
+.desktop-message.show {display: block;}
+.form-table th {
+    padding-left: 12px !important;
+}
+a.current.menu-top.toplevel_page_beetexting_texting_widget.menu-top-first.menu-top-last img, #adminmenu .wp-menu-image img {
+    width: 23px !important;
+    /* margin: 0; */
+    padding: 5px 0 !important;
+    opacity: 1;
+}
+/* Add on click */
+.add-styles {
+	opacity: 1;
+}
